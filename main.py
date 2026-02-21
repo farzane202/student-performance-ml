@@ -6,9 +6,9 @@ from models.linear_model import run_linear_regression
 from models.knn_model import run_knn
 
 
-# ==============================
-# 1️⃣ Load & Preprocess
-# ==============================
+
+# Load & Preprocess
+
 
 X_train, X_test, y_train, y_test, feature_columns = load_and_preprocess(
     "data/student-mat.csv"
@@ -18,17 +18,17 @@ print("Train size:", X_train.shape)
 print("Test size:", X_test.shape)
 
 
-# ==============================
-# 2️⃣ Train Models
-# ==============================
+
+# Train Models
+
 
 linear_model = run_linear_regression(X_train, X_test, y_train, y_test)
 knn_model = run_knn(X_train, X_test, y_train, y_test)
 
 
-# ==============================
-# 3️⃣ User Input Prediction
-# ==============================
+
+#  User Input Prediction
+
 
 print("\n=== Student Grade Prediction ===")
 
